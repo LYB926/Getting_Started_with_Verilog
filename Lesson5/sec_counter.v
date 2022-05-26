@@ -1,4 +1,4 @@
-//秒计数器(0-9循环)，假设系统时钟CLK为24MHz、
+//秒计数器(0-9循环)，假设系统时钟CLK为24MHz
 `timescale 1ns/10ps
 module s_counter (clk, res, s_num);
 input       clk;
