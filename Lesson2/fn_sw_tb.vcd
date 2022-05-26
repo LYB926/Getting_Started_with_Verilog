@@ -1,0 +1,49 @@
+$date
+	Thu May 26 17:00:16 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module fn_sw_tb $end
+$var wire 1 ! yy $end
+$var reg 1 " aa $end
+$var reg 1 # bb $end
+$var reg 1 $ ss $end
+$scope module fn_sw $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ sel $end
+$var reg 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+0#
+0"
+0!
+$end
+#1000
+1$
+#2000
+0$
+1#
+#3000
+1!
+1$
+#4000
+0!
+0$
+0#
+1"
+#5000
+1!
+1$
+#6000
+0!
+1#
+#7000
