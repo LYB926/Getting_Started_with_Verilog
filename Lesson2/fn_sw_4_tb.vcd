@@ -1,0 +1,110 @@
+$date
+	Thu May 26 17:17:32 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module fn_sw_4_tb $end
+$var wire 1 ! yy $end
+$var reg 4 " absel [3:0] $end
+$scope module fn_sw_4 $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 2 % sel [1:0] $end
+$var reg 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 %
+0$
+0#
+b0 "
+0!
+$end
+#1000
+1#
+b1 "
+#2000
+0#
+1$
+b10 "
+#3000
+1!
+1#
+b11 "
+#4000
+0!
+0#
+0$
+b1 %
+b100 "
+#5000
+1!
+1#
+b101 "
+#6000
+0#
+1$
+b110 "
+#7000
+1#
+b111 "
+#8000
+0!
+0#
+0$
+b10 %
+b1000 "
+#9000
+1!
+1#
+b1001 "
+#10000
+0#
+1$
+b1010 "
+#11000
+0!
+1#
+b1011 "
+#12000
+1!
+0#
+0$
+b11 %
+b1100 "
+#13000
+0!
+1#
+b1101 "
+#14000
+0#
+1$
+b1110 "
+#15000
+1!
+1#
+b1111 "
+#16000
+0!
+0#
+0$
+b0 %
+b0 "
+#17000
+1#
+b1 "
+#18000
+0#
+1$
+b10 "
+#19000
+1!
+1#
+b11 "
+#20000
