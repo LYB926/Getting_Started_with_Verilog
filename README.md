@@ -1,0 +1,2 @@
+# Getting_Started_with_Verilog
+通过北京交通大学的网课学习Verilog HDL入门。
