@@ -1,0 +1,51 @@
+$date
+	Thu May 26 16:42:32 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module nand_gate_4bits_tb $end
+$var wire 4 ! yy [3:0] $end
+$var reg 4 " aa [3:0] $end
+$var reg 4 # bb [3:0] $end
+$scope module nand_gate_4bits $end
+$var wire 4 $ A [3:0] $end
+$var wire 4 % B [3:0] $end
+$var wire 4 & Y [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111 &
+b1111 %
+b0 $
+b1111 #
+b0 "
+b1111 !
+$end
+#1000
+b1101 !
+b1101 &
+b110 #
+b110 %
+b10 "
+b10 $
+#2000
+b1011 !
+b1011 &
+b100 #
+b100 %
+b111 "
+b111 $
+#3000
+b1111 !
+b1111 &
+b1110 #
+b1110 %
+b0 "
+b0 $
+#4000
