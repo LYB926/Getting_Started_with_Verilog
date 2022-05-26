@@ -1,0 +1,77 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 11;
+:vpi_module "D:\iVerilog\lib\ivl\system.vpi";
+:vpi_module "D:\iVerilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\iVerilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\iVerilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\iVerilog\lib\ivl\va_math.vpi";
+S_00000232d5736af0 .scope module, "con_tb" "con_tb" 2 22;
+ .timescale -9 -11;
+v00000232d5733d80_0 .var "clk", 0 0;
+v00000232d5733e20_0 .var "res", 0 0;
+v00000232d5733ec0_0 .net "y", 7 0, v00000232d5736eb0_0;  1 drivers
+S_00000232d5736c80 .scope module, "con" "con" 2 25, 2 3 0, S_00000232d5736af0;
+ .timescale -9 -11;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "res";
+    .port_info 2 /OUTPUT 8 "y";
+L_00000232d5779848 .functor BUFT 1, C4<00000001>, C4<0>, C4<0>, C4<0>;
+v00000232d56e9ca0_0 .net/2u *"_ivl_0", 7 0, L_00000232d5779848;  1 drivers
+v00000232d56e9d40_0 .net "clk", 0 0, v00000232d5733d80_0;  1 drivers
+v00000232d56e6ae0_0 .net "res", 0 0, v00000232d5733e20_0;  1 drivers
+v00000232d5736e10_0 .net "sum", 7 0, L_00000232d5733f60;  1 drivers
+v00000232d5736eb0_0 .var "y", 7 0;
+E_00000232d56ec500/0 .event negedge, v00000232d56e6ae0_0;
+E_00000232d56ec500/1 .event posedge, v00000232d56e9d40_0;
+E_00000232d56ec500 .event/or E_00000232d56ec500/0, E_00000232d56ec500/1;
+L_00000232d5733f60 .arith/sum 8, v00000232d5736eb0_0, L_00000232d5779848;
+    .scope S_00000232d5736c80;
+T_0 ;
+    %wait E_00000232d56ec500;
+    %load/vec4 v00000232d56e6ae0_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 8;
+    %assign/vec4 v00000232d5736eb0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v00000232d5736e10_0;
+    %assign/vec4 v00000232d5736eb0_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_00000232d5736af0;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000232d5733d80_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000232d5733e20_0, 0;
+    %delay 2000, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000232d5733e20_0, 0;
+    %delay 600000, 0;
+    %vpi_call 2 33 "$stop" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_00000232d5736af0;
+T_2 ;
+    %delay 500, 0;
+    %load/vec4 v00000232d5733d80_0;
+    %inv;
+    %store/vec4 v00000232d5733d80_0, 0, 1;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_00000232d5736af0;
+T_3 ;
+    %vpi_call 2 38 "$dumpfile", "conv_tb.vcd" {0 0 0};
+    %vpi_call 2 39 "$dumpvars" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    ".\counter.v";
