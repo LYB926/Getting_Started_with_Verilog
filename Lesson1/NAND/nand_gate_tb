@@ -1,0 +1,61 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 11;
+:vpi_module "D:\iVerilog\lib\ivl\system.vpi";
+:vpi_module "D:\iVerilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\iVerilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\iVerilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\iVerilog\lib\ivl\va_math.vpi";
+S_0000022166898cf0 .scope module, "nand_gate_tb" "nand_gate_tb" 2 14;
+ .timescale -9 -11;
+v00000221668e5bd0_0 .var "aa", 0 0;
+v00000221668e5c70_0 .var "bb", 0 0;
+v00000221668e5d10_0 .net "yy", 0 0, L_0000022166898e80;  1 drivers
+S_00000221668e5900 .scope module, "nand_gate" "nand_gate" 2 18, 2 3 0, S_0000022166898cf0;
+ .timescale -9 -11;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "Y";
+L_0000022166896d90 .functor AND 1, v00000221668e5bd0_0, v00000221668e5c70_0, C4<1>, C4<1>;
+L_0000022166898e80 .functor NOT 1, L_0000022166896d90, C4<0>, C4<0>, C4<0>;
+v00000221668e4e30_0 .net "A", 0 0, v00000221668e5bd0_0;  1 drivers
+v0000022166896cf0_0 .net "B", 0 0, v00000221668e5c70_0;  1 drivers
+v00000221668e5a90_0 .net "Y", 0 0, L_0000022166898e80;  alias, 1 drivers
+v00000221668e5b30_0 .net *"_ivl_0", 0 0, L_0000022166896d90;  1 drivers
+    .scope S_0000022166898cf0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000221668e5bd0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000221668e5c70_0, 0;
+    %delay 1000, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000221668e5bd0_0, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000221668e5c70_0, 0;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000221668e5bd0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000221668e5c70_0, 0;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000221668e5bd0_0, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000221668e5c70_0, 0;
+    %delay 1000, 0;
+    %vpi_call 2 28 "$stop" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000022166898cf0;
+T_1 ;
+    %vpi_call 2 32 "$dumpfile", "nand_gate_tb.vcd" {0 0 0};
+    %vpi_call 2 33 "$dumpvars" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    ".\nandgate.v";
