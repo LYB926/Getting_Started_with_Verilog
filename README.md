@@ -11,7 +11,7 @@ sudo apt-get install gtkwave
 ```
 
 
-要使用`IVerilog`生成仿真波形文件，需要在`Testbench`中加入如下代码：
+要使用`iVerilog`生成仿真波形文件，需要在`Testbench`中加入如下代码：
 ```
 initial begin
     $dumpfile("file_tb.vcd");
