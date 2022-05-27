@@ -1,10 +1,10 @@
 # Getting Started with Verilog
-通过北京交通大学的网课学习Verilog HDL入门。  
+通过北京交通大学的网课学习`Verilog HDL`入门。  
 + 视频地址：https://www.bilibili.com/video/BV1hX4y137Ph
-+ 在Ubuntu WSL上使用VS Code、Icarus Verilog和GTKWave的开源解决方案进行Testbench仿真。
++ 在`Ubuntu WSL`上使用`VS Code`、`Icarus Verilog`和`GTKWave`的开源解决方案进行`Testbench`仿真。
 
 
-可以使用apt包管理器安装Icarus Verilog和GTKWave：
+可以使用`apt-get`包管理器安装`Icarus Verilog`和`GTKWave`：
 ```
 sudo apt-get install iverilog
 sudo apt-get install gtkwave
