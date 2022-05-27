@@ -20,4 +20,4 @@ gtkwave file_tb.vcd
 
 
 使用GTKWave打开vcd波形文件后的界面如下：
-![GTKWave样例](https://github.com/LYB926/Getting_Started_with_Verilog/blob/main/Lesson7/tri_gen_wave.png "GTKWave样例")
+![GTKWave样例](https://ghproxy.futils.com/https://github.com/LYB926/Getting_Started_with_Verilog/blob/main/Lesson7/tri_gen_wave.png "GTKWave样例")
