@@ -7,6 +7,7 @@
 可以使用apt包管理器安装Icarus Verilog和GTKWave：
 `
 sudo apt-get install iverilog
+
 sudo apt-get install gtkwave
 `
 
@@ -14,7 +15,9 @@ sudo apt-get install gtkwave
 通过以下指令编译综合以及查看仿真结果：
 `
 iverilog -o file_tb file.v
+
 vvp file_tb
+
 gtkwave file_tb.vcd
 `
 
