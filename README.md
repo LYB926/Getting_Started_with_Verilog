@@ -5,21 +5,19 @@
 
 
 可以使用apt包管理器安装Icarus Verilog和GTKWave：
-`
+```
 sudo apt-get install iverilog
-
 sudo apt-get install gtkwave
-`
+```
 
 
 通过以下指令编译综合以及查看仿真结果：
-`
+```
 iverilog -o file_tb file.v
-
 vvp file_tb
-
 gtkwave file_tb.vcd
-`
+```
 
 
 使用GTKWave打开vcd波形文件后的界面如下：
+![GTKWave样例](https://github.com/LYB926/Getting_Started_with_Verilog/blob/main/Lesson7/tri_gen_wave.png "GTKWave样例")
