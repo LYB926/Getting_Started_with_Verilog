@@ -1,0 +1,53 @@
+$date
+	Fri May 27 18:17:53 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module UART_TX_tb $end
+$var wire 1 ! rdy $end
+$upscope $end
+$scope module UART_TX_tb $end
+$var wire 1 " TX $end
+$upscope $end
+$scope module UART_TX_tb $end
+$var reg 1 # en_data_in $end
+$upscope $end
+$scope module UART_TX_tb $end
+$var reg 8 $ data_in [7:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010011 $
+0#
+1"
+0!
+$end
+#4700
+1#
+#5500
+0"
+1!
+#5700
+0#
+#5005500
+1"
+#15005500
+0"
+#25005500
+1"
+#30005500
+0"
+#35005500
+1"
+#40005500
+0"
+#45005500
+1"
+#45006500
+0!
+#55005700
