@@ -1,0 +1,76 @@
+$date
+	Fri May 27 22:49:00 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module UART_top_tb $end
+$var reg 1 ! res $end
+$upscope $end
+$scope module UART_top_tb $end
+$var wire 1 " RX $end
+$upscope $end
+$scope module UART_top_tb $end
+$var wire 1 # TX $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1#
+1"
+0!
+$end
+#1700
+1!
+#75000500
+0"
+#85000500
+1"
+#90000500
+0"
+#95000500
+1"
+#100000500
+0"
+#120000500
+1"
+#125000500
+0"
+#155000500
+1"
+#160000500
+0"
+#165000500
+1"
+#175000500
+0"
+#185000500
+1"
+#190000500
+0"
+#195000500
+1"
+#200000500
+0"
+#217506500
+0#
+#220000500
+1"
+#227506500
+1#
+#232506500
+0#
+#237506500
+1#
+#242506500
+0#
+#247506500
+1#
+#252506500
+0#
+#257506500
+1#
+#300001700
